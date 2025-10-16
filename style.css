@@ -25,6 +25,21 @@ body {
     margin: 0 auto;
 }
 
+.socbtn {
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+.socdiv {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 .header {
             position: fixed;
             top: 0;
