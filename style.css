@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #fff;
+    font-size: 16px;
+    padding-top: 80px; /* Подбираем под высоту header */
+    padding-bottom: 40px; /* Подбираем под высоту footer */
+    min-height: 100vh;
+        }
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+            z-index: 1000;
+            margin-bottom: 0; /* Убираем margin */
+            height: 60px;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000000;
+            color: #ffffff;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 5px;
+            padding: 4px 20px;
+            margin-bottom: 0; /* Убираем margin */
+            border: none; /* Убираем границы */
+            z-index: 1000;
+            height: 30px;
+        }
+
+.nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+.nav a:hover {
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.project-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.project-content h4 {
+    margin: 0 0 15px 0;
+    font-size: 1.4rem;
+}
+
+.project-content p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.copyright {
+    color: rgb(112, 112, 112);
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+/* Для компьютеров */
+@media (min-width: 768px) {
+    .header {
+        flex-wrap: nowrap;
+        gap: 150px;
+    }
+    
+    .project-card {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .project-image {
+        margin: 0;
+    }
+    
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Для планшетов */
+@media (max-width: 767px) {
+    .header {
+        justify-content: space-between;
+        gap: 15px;
+    }
+    
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    .nav a {
+        font-size: 1rem;
+        padding: 6px 12px;
+    }
+}
+
+/* Для мобильных */
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+        font-size: 16px;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    h1 {
+        font-size: 1.4rem;
+    }
+    
+    .nav {
+        gap: 8px;
+    }
+    
+    .nav a {
+        font-size: 0.9rem;
+        padding: 5px 10px;
+    }
+    
+    .project-content h4 {
+        font-size: 1.2rem;
+    }
+    
+    .project-content p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 360px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    h1 {
+        font-size: 1.2rem;
+    }
+    
+    .nav a {
+        font-size: 0.85rem;
+        padding: 4px 8px;
+    }
+}
