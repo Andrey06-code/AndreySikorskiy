@@ -167,8 +167,8 @@ h1 {
     body {
         padding: 15px;
         font-size: 16px;
-        padding-top: 120px; /* Подбираем под высоту header */
-    padding-bottom: 90px; /* Подбираем под высоту footer */
+        padding-top: 100px; /* Подбираем под высоту header */
+    padding-bottom: 60px; /* Подбираем под высоту footer */
     }
     
     .container {
