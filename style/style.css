@@ -80,6 +80,27 @@ body {
             margin-bottom: 0; /* Убираем margin */
             height: 60px;
         }
+        .header-info {
+            position: fixed;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            color: #000000;
+            background-color: #acdfff;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            
+            
+            z-index: 1000;
+            margin-bottom: 60px; /* Убираем margin */
+            height: 60px;
+        }
 
         .footer {
             position: fixed;
@@ -91,8 +112,8 @@ body {
             display: flex;
             flex-direction: row;
             align-items: center;
-            
-            justify-content: space-between;
+            text-align: center;
+            justify-content: center;
             flex-wrap: wrap;
             gap: 5px;
             padding: 4px 20px;
