@@ -11,7 +11,7 @@ body {
     background-color: #fff;
     font-size: 16px;
     padding-top: 80px; /* Подбираем под высоту header */
-    padding-bottom: 40px; /* Подбираем под высоту footer */
+    padding-bottom: 60px; /* Подбираем под высоту footer */
     min-height: 100vh;
         }
 
@@ -99,7 +99,7 @@ body {
             margin-bottom: 0; /* Убираем margin */
             border: none; /* Убираем границы */
             z-index: 1000;
-            height: 30px;
+            height: 40px;
         }
 
 .nav {
